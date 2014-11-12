@@ -21,9 +21,9 @@ public class Matematicas{
 		return (Math.round (numero));
 		
 	}
-	//public double getAleatorio(){
-		return (Math.round(Math.random ()*this.numero));
-	}	
+	public double getAleatorio(){
+		return Math.round(Math.random()*this.numero);
+	}
 	//setter
 	
 	public void setNumero(double num){
@@ -39,6 +39,7 @@ class TestMatematicas{
 	Matematicas n2 = new Matematicas();
 	Matematicas n3 = new Matematicas();
 	Matematicas n4 = new Matematicas();
+	Matematicas n5 = new Matematicas();
 	n1.setNumero(4);
 	n2.setNumero(6);
 	n3.setNumero(12);
@@ -48,7 +49,7 @@ class TestMatematicas{
 	System.out.println("Un metodo que devuelva la raiz cuadrada de dicho numero: " +n2.getRaiz());
 	System.out.println("Un metodo que devuelva la raiz cubica de dicho numero en valor absoluto: " +n3.getRaizCubica());
 	System.out.println("Un metodo que redondee el numero de tipo double a entero: " +n4.getRedonde());
-	System.out.println(n5.getAleatorio());
+	System.out.println("Numero aleatorio : " +n5.getAleatorio());
 	}
 	
 }
