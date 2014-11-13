@@ -13,7 +13,7 @@ public class Matematicas{
 	}	
 	
 	public double getRaizCubica(){
-		return (Math.round(Math.cbrt (numero)));
+		return Math.abs(Math.round(Math.cbrt (numero)));
 		
 	}
 	
